@@ -43,4 +43,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     client.vm.hostname = "consulclient"
 	client.vm.network "private_network", ip: "172.20.20.40"
   end
+  config.vm.define "consultest" do |client|
+        config.vm.provision "shell" do |s|
+                s.path = "provisionclient.sh"
+                s.args   = ["/vagrant/consultest/config.json"]
+        end
+    client.vm.hostname = "consultest"
+        client.vm.network "private_network", ip: "172.20.20.50"
+  end
 end
