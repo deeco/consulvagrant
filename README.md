@@ -11,6 +11,8 @@ For an overview of what's been done here please refer to the following blog post
 * [Setting up a Consul cluster for testing and development with Vagrant (Part 1)](http://www.andyfrench.info/2015/08/setting-up-consul-cluster-for-testing.html)
 * [Setting up a Consul cluster for testing and development with Vagrant (Part 2)](http://www.andyfrench.info/2015/08/setting-up-consul-cluster-for-testing_15.html)
 
+This has been updated to use ubuntu trusty and enable the new in built ui within latest consul version 1.4.4 , this has been updated in the consulclient config.json
+
 ## Prerequisites ##
 
 You will need to have installed Vagrant and VirtualBox.
